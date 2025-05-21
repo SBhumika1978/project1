@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="head">Course Registration Form</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                required
+                placeholder="Ex:Bhumika"
+                name="FN"
+                size="10"
+                maxlength="15"
+              />
+              <span>Enter your FirstName</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td>
+              <input
+                type="text"
+                optional
+                placeholder="Ex:S"
+                name="LN"
+                size="10"
+                maxlength="15"
+              />
+              <span>Enter your LastName</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                required
+                placeholder="Ex:7671999171"
+                name="PH"
+                size="10"
+                maxlength="10"
+              />
+              <span>Enter your Mobile Number</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input
+                type="email"
+                required
+                placeholder="Ex:bhumisavireddy123@gmail.com"
+                name="email"
+                size="10"
+                maxlength="250"
+              />
+              <span>Enter your Email</span>
+              <img
+                id="valid"
+                src="https://images.icon-icons.com/1506/PNG/512/emblemok_103757.png"
+                alt=""
+              />
+              <img
+                id="invalid"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/No-Symbol.png/640px-No-Symbol.png"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="Ex:Bhumi@123"
+                name="password"
+                size="10"
+                maxlength="8"
+              />
+              <span>Enter your Password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Conform Password</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="Ex:Bhumi@123"
+                name="cpassword"
+                size="10"
+                maxlength="8"
+              />
+              <span>Enter your Conform password</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td>
+              <input
+                type="date"
+                required
+                placeholder="Ex:03/05/2004"
+                name="DOB"
+                size="10"
+                maxlength="10"
+              />
+              <span>Enter your DOB</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" id="male" />
+              <label for="male">Male</label>
+
+              <input type="radio" name="gender" value="F" id="female" />
+              <label for="female">Female</label>
+
+              <input type="radio" name="gender" value="O" id="other" />
+              <label for="other">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">INDIA</option>
+                <option value="">US</option>
+                <option value="">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload Picture</label></td>
+            <td><input type="file" required /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <table>
+          <tr>
+            <td><label for="">Select course</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">Python Full Stack</option>
+                <option value="">Java Full stack</option>
+                <option value="">Testing</option>
+                <option value="">Devops</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Delivery Mode</label></td>
+            <td>
+              <input type="radio" name="mode" id="" />
+              <label for="online">ONLINE</label>
+
+              <input type="radio" name="mode" id="" />
+              <label for="offlne">OFFLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="institution">Institution Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="institution"
+                value="TAP ACADEMY"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Comments</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="" id="" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
